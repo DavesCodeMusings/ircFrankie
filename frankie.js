@@ -71,7 +71,7 @@ client.on('data', (data) => {
       // Anything after the prefix and the command response is captured as parameters and
       // shown in console output, but is not acted upon by this program.
       params = line.slice(endOfResponse + 1);
-      console.log(`  With params... ${params}`);
+      console.log(`  With params... '${params}'`);
 
       // Compare server responses to decide what to do next.
       if (response == '004') {  // 001 - 004 are generated in sequence on successful registration.
