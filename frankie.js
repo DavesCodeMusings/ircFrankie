@@ -78,8 +78,8 @@ client.on('data', (data) => {
         console.log('Registering as frankie.');
         client.write(`JOIN ${ircChannel}\r\n`);
       } else if (response == 'PING') {  // Keep the connection alive by responding to pings.
-        console.log('Frankie say: PONG');
-        client.write('PONG\r\n');
+        console.log(`Frankie say: PONG ${params}`);
+        client.write(`PONG ${params}\r\n`);
       } else if (response == 'PRIVMSG') {  // Respone to messages with catch phrase.
         console.log(`PRIVMSG ${ircChannel} :Relax.`);
         client.write(`PRIVMSG ${ircChannel} :Relax.\r\n`);
