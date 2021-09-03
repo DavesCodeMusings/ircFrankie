@@ -13,7 +13,10 @@ To use ircFrankie, you'll need an IRC server. They are fairly rare these
 days. InspIRCd is a package available for FreeBSD and other unix-like OS.
 InspIRCd was used in testing ircFrankie.
 
-If you have an IRC server available, check the top of frankie.js for the
+I have a Docker container for InspIRCd on Raspberry Pi that may be helpful.
+https://hub.docker.com/r/davescodemusings/inspircd
+
+Once you have an IRC server available, check the top of frankie.js for the
 hostname and port number. By default, they are configured for an IRC server
 on the local host.
 
