@@ -81,8 +81,15 @@ client.on('data', (data) => {
         console.log(`Frankie say: PONG ${params}`);
         client.write(`PONG ${params}\r\n`);
       } else if (response == 'PRIVMSG') {  // Respone to messages with catch phrase.
-        console.log(`PRIVMSG ${ircChannel} :Relax.`);
-        client.write(`PRIVMSG ${ircChannel} :Relax.\r\n`);
+        if (params.toLowerCase().includes('war')) {
+          console.log(`PRIVMSG ${ircChannel} :Hide yourself.`);
+          client.write(`PRIVMSG ${ircChannel} :Hide yourself.\r\n`);
+        }
+        else {
+          console.log(`PRIVMSG ${ircChannel} :Relax.`);
+          client.write(`PRIVMSG ${ircChannel} :Relax.\r\n`);
+        }
+
       }
     }
   });
