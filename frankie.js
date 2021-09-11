@@ -3,7 +3,7 @@
  * Frankie is configured to log in and join the #hollywood channel.
  * Anything anyone says is met with Frankie's standard reply, "Relax."
  * Traffic to and from the server is logged on the console.
- * @author David Horton https://github.com/DavesCodeMusings/WeeNAS
+ * @author David Horton https://github.com/DavesCodeMusings/
  */
 const net = require('net');
 
